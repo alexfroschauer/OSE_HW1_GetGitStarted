@@ -5,9 +5,18 @@ Created on Fri Apr  5 21:20:56 2024
 @author: froscale
 """
 
-def isNaturalNumber(number):
+def isGanzeZahl(number):
     if (number * 10) % 10 == 0:
         return True
+    else:
+        return False
+
+def isNaturalNumber(number):
+    if isGanzeZahl == True:
+        if number > 0:
+            return True
+        else:
+            return False
     else:
         return False
 
